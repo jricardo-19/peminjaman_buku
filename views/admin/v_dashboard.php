@@ -1,3 +1,5 @@
+<div class="ep-page-heading"><div><span class="ep-eyebrow">ADMINISTRATOR</span><h2>Dashboard Perpustakaan</h2><p>Ringkasan data buku, anggota, dan aktivitas peminjaman.</p></div></div>
+
         <div class="row g-3 mb-4">
             <div class="col-md-3 col-6">
                 <div class="card">
