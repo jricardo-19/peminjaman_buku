@@ -1,6 +1,3 @@
-<div class="pc-container">
-    <div class="pc-content">
-
         <div class="card mb-4">
             <div class="card-header d-flex justify-content-between align-items-center flex-wrap gap-2">
                 <h5 class="mb-0">Transaksi Aktif (Sedang Dipinjam)</h5>
@@ -82,6 +79,3 @@
                 </table>
             </div>
         </div>
-
-    </div>
-</div>
