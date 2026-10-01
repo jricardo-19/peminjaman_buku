@@ -9,7 +9,7 @@
 
     <meta
         name="description"
-        content="E-Perpus adalah platform perpustakaan digital untuk membantu siswa mencari, meminjam, dan membaca buku dengan mudah.">
+        content="E-Perpus adalah sistem peminjaman buku perpustakaan sekolah yang membantu siswa mencari, meminjam, dan mengembalikan buku dengan mudah.">
 
     <link rel="icon" type="image/svg+xml" href="<?= BASE_URL ?>assets/images/favicon.svg">
 
@@ -205,13 +205,13 @@
 
                     <h1 class="hero-title">
 
-                        Pinjam dan Baca Buku
+                        Peminjaman Buku
                         <br>
 
-                        Favoritmu
+                        Perpustakaan Sekolah
 
                         <span>
-                            dengan Mudah.
+                            yang Lebih Mudah.
                         </span>
 
                     </h1>
@@ -233,7 +233,7 @@
                             href="<?= BASE_URL ?>index.php?page=auth&action=login"
                             class="btn-primary">
 
-                            <span>Mulai Meminjam</span>
+                            <span>Mulai Peminjaman</span>
 
                             <span class="btn-arrow">
                                 →
@@ -267,7 +267,7 @@
                         </span>
 
                         <span>
-                            Koleksi lengkap, proses cepat, dan mudah diakses.
+                            Akses koleksi buku, lakukan peminjaman, dan kembalikan buku melalui satu sistem.
                         </span>
 
                     </div>
@@ -364,7 +364,7 @@
                 </h2>
 
                 <p class="section-description">
-                    Ikuti panduan mudah ini untuk mulai meminjam buku favorit Anda.
+                    Ikuti alur sederhana berikut untuk melakukan peminjaman dan pengembalian buku.
                 </p>
 
 
@@ -411,11 +411,11 @@
                         </span>
 
                         <h3>
-                            Ajukan Pinjaman
+                            Pinjam Buku
                         </h3>
 
                         <p>
-                            Klik tombol pinjam dan tunggu persetujuan dari petugas perpustakaan.
+                            Klik tombol pinjam untuk membuat transaksi peminjaman sesuai buku yang tersedia.
                         </p>
 
                     </div>
@@ -432,7 +432,7 @@
                         </h3>
 
                         <p>
-                            Kembalikan buku sebelum batas waktu agar terhindar dari denda.
+                            Kembalikan buku sesuai batas waktu peminjaman. Keterlambatan dapat dikenakan denda sesuai ketentuan sistem.
                         </p>
 
                     </div>
