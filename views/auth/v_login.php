@@ -7,6 +7,7 @@
     
     <!-- Memanggil CSS utama Mantis Dashboard dari folder assets -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/auth-polish.css">
     <!-- Memanggil Icon Bootstrap / FontAwesome jika tersedia di assets -->
     <link rel="stylesheet" href="assets/fonts/fontawesome.css">
 </head>
