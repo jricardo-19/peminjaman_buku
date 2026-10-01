@@ -259,3 +259,42 @@ body[data-pc-theme="light"]{
     .pc-header .pc-head-link{padding:9px 8px;font-size:13px;}
     .pc-header .pc-head-link i{margin-right:3px !important;}
 }
+
+/* ===== E-PERPUS USER AREA ===== */
+.ep-user-header .header-wrapper{max-width:none;width:100%;padding:0 32px;gap:28px}
+.ep-user-brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#172033;min-width:215px}
+.ep-brand-mark{width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:#eff6ff;color:#2563eb;font-size:20px}
+.ep-user-brand strong,.ep-user-brand small{display:block}
+.ep-user-brand strong{font-size:16px;line-height:1.2}
+.ep-user-brand small{font-size:11px;color:#94a3b8;margin-top:2px}
+.ep-user-nav{display:flex;align-items:center;gap:4px;flex:1}
+.ep-nav-item{display:flex;align-items:center;gap:8px;padding:10px 14px;border-radius:10px;text-decoration:none;color:#64748b;font-size:14px;font-weight:600}
+.ep-nav-item:hover,.ep-nav-item.active{color:#2563eb;background:#eff6ff}
+.ep-user-account{margin-left:auto}
+.ep-account-button{display:flex;align-items:center;gap:9px;text-decoration:none;color:#172033;padding:5px 7px;border-radius:12px}
+.ep-account-button:hover{background:#f8fafc}
+.ep-avatar{width:38px;height:38px;border-radius:50%;display:grid;place-items:center;background:#2563eb;color:#fff;font-size:17px}
+.ep-avatar.large{width:42px;height:42px}
+.ep-account-text strong,.ep-account-text small{display:block}
+.ep-account-text strong{font-size:13px}
+.ep-account-text small{font-size:11px;color:#94a3b8}
+.ep-account-chevron{font-size:15px;color:#94a3b8}
+.ep-account-menu{min-width:250px;padding:8px;border:1px solid #e8ecf3;border-radius:14px;box-shadow:0 16px 40px rgba(15,23,42,.12)}
+.ep-account-header{display:flex;align-items:center;gap:10px;padding:8px}
+.ep-account-header strong,.ep-account-header small{display:block}
+.ep-account-header strong{font-size:13px}
+.ep-account-header small{color:#94a3b8;font-size:11px;margin-top:2px}
+.ep-account-menu .dropdown-item{display:flex;gap:9px;align-items:center;border-radius:9px;padding:10px}
+.ep-account-menu .dropdown-item i{font-size:17px}
+.pc-footer{border-top:1px solid #e8ecf3;background:#fff}
+.pc-footer .footer-wrapper{padding:14px 28px;color:#94a3b8;font-size:12px}
+
+@media(max-width:991px){
+ .ep-user-header .header-wrapper{padding:0 16px;gap:12px}
+ .ep-user-brand{min-width:auto}
+ .ep-user-brand small,.ep-account-text{display:none}
+ .ep-user-nav{overflow-x:auto;white-space:nowrap}
+ .ep-nav-item{padding:9px 10px}
+ .ep-account-button{padding:4px}
+ .ep-account-chevron{display:none}
+}
