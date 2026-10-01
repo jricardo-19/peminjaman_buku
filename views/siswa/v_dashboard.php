@@ -1,9 +1,4 @@
-<div class="card mb-4">
-    <div class="card-body">
-        <h4 class="fw-bold mb-2">Selamat datang, <?= htmlspecialchars($_SESSION['nama_lengkap']); ?> 👋</h4>
-        <p class="text-muted mb-0">Kelas <?= htmlspecialchars($_SESSION['kelas']); ?> — gunakan menu di atas untuk meminjam atau mengembalikan buku.</p>
-    </div>
-</div>
+<div class="ep-page-heading"><div><span class="ep-eyebrow">DASHBOARD SISWA</span><h2>Selamat datang, <?= htmlspecialchars($_SESSION['nama_lengkap']); ?> 👋</h2><p>Kelas <?= htmlspecialchars($_SESSION['kelas']); ?> &mdash; kelola peminjaman dan pengembalian buku dari sini.</p></div></div>
 
 <div class="row g-3">
     <div class="col-md-6">
