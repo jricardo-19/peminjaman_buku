@@ -1,0 +1,17 @@
+/* E-PERPUS AUTH */
+.auth-polish{}
+body.bg-light{background:linear-gradient(135deg,#eff6ff 0%,#f8fafc 55%,#eef2ff 100%) !important;min-height:100vh}
+.auth-main{min-height:100vh}
+.auth-wrapper.v1{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:30px 16px}
+.auth-form{width:100%;max-width:470px}
+.auth-form .card{border:1px solid #e8ecf3;border-radius:20px;box-shadow:0 20px 55px rgba(15,23,42,.10);overflow:hidden}
+.auth-form .card-body{padding:36px}
+.auth-form h3{font-size:25px;font-weight:800;margin-bottom:8px}
+.auth-form .text-muted{color:#718096 !important;line-height:1.6}
+.auth-form .form-label{font-size:13px;font-weight:700;color:#334155;margin-bottom:7px}
+.auth-form .form-control{height:46px;border:1px solid #dbe2ea;border-radius:10px;padding:10px 13px}
+.auth-form .form-control:focus{border-color:#2563eb;box-shadow:0 0 0 3px rgba(37,99,235,.10)}
+.auth-form .btn-primary{height:46px;border-radius:10px;font-weight:700;background:#2563eb;border-color:#2563eb}
+.auth-form .alert{border-radius:10px;border:0}
+.auth-form a{transition:.2s ease}
+@media(max-width:576px){.auth-form .card-body{padding:26px 20px}.auth-form h3{font-size:22px}}
