@@ -7,7 +7,7 @@
         <div class="footer-wrapper container-fluid">
             <div class="row">
                 <div class="col my-1">
-                    <p class="m-0">Copyright &copy; Aplikasi Anda</p>
+                    <p class="m-0">Copyright &copy; E-Perpus &mdash; Sistem Peminjaman Buku Sekolah</p>
                 </div>
             </div>
         </div>
