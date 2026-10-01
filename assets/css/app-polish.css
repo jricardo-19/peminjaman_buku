@@ -1,0 +1,261 @@
+/* =========================================================
+   E-PERPUS UI POLISH
+   Presentation only. No routing, controller, model, or data logic.
+========================================================= */
+
+:root{
+    --ep-primary:#2563eb;
+    --ep-primary-dark:#1d4ed8;
+    --ep-bg:#f6f8fc;
+    --ep-card:#ffffff;
+    --ep-text:#172033;
+    --ep-muted:#6b7280;
+    --ep-border:#e8ecf3;
+    --ep-radius:16px;
+    --ep-shadow:0 8px 28px rgba(15,23,42,.06);
+}
+
+body[data-pc-theme="light"]{
+    background:var(--ep-bg);
+    color:var(--ep-text);
+}
+
+.pc-container .pc-content{
+    padding:28px;
+    min-height:calc(100vh - 120px);
+}
+
+.pc-content > .card,
+.pc-content > .row{
+    max-width:1400px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.card{
+    border:1px solid var(--ep-border);
+    border-radius:var(--ep-radius);
+    box-shadow:var(--ep-shadow);
+    overflow:hidden;
+    background:var(--ep-card);
+}
+
+.card-header{
+    background:#fff;
+    border-bottom:1px solid var(--ep-border);
+    padding:18px 22px;
+}
+
+.card-header h5{
+    color:var(--ep-text);
+    font-weight:700;
+}
+
+.card-body{padding:22px;}
+
+.form-label{
+    font-weight:600;
+    color:#374151;
+    margin-bottom:7px;
+}
+
+.form-control,
+.form-select{
+    border-color:#dfe5ee;
+    border-radius:10px;
+    min-height:42px;
+    box-shadow:none;
+}
+
+.form-control:focus,
+.form-select:focus{
+    border-color:var(--ep-primary);
+    box-shadow:0 0 0 3px rgba(37,99,235,.10);
+}
+
+.btn{
+    border-radius:9px;
+    font-weight:600;
+}
+
+.table-responsive{
+    border-radius:0 0 var(--ep-radius) var(--ep-radius);
+}
+
+.table{
+    margin-bottom:0;
+    vertical-align:middle;
+}
+
+.table thead th{
+    background:#f8fafc;
+    color:#64748b;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:.03em;
+    text-transform:uppercase;
+    border-bottom:1px solid var(--ep-border);
+    white-space:nowrap;
+}
+
+.table tbody td{
+    color:#374151;
+    border-color:#eef1f5;
+    padding-top:14px;
+    padding-bottom:14px;
+}
+
+.table tbody tr:hover{background:#f8fbff;}
+
+.badge{
+    border-radius:999px;
+    padding:6px 10px;
+    font-weight:600;
+}
+
+.alert{
+    border:0;
+    border-radius:12px;
+    margin-bottom:18px;
+}
+
+/* User top navigation */
+.pc-header{
+    background:#fff;
+    border-bottom:1px solid var(--ep-border);
+    box-shadow:0 3px 18px rgba(15,23,42,.04);
+}
+
+.pc-header .header-wrapper{
+    min-height:70px;
+    padding:0 28px;
+    display:flex;
+    align-items:center;
+}
+
+.pc-header .list-unstyled.d-flex{
+    margin-left:10px;
+    gap:6px !important;
+}
+
+.pc-header .pc-head-link{
+    border-radius:10px;
+    padding:10px 13px;
+    color:#64748b;
+    font-weight:600;
+    transition:.2s ease;
+}
+
+.pc-header .pc-head-link:hover,
+.pc-header .pc-head-link.active{
+    color:var(--ep-primary);
+    background:#eff6ff;
+}
+
+.pc-header .pc-head-link i{font-size:17px;}
+
+.pc-header .pc-h-item .dropdown-menu{
+    border:1px solid var(--ep-border);
+    border-radius:12px;
+    box-shadow:0 14px 35px rgba(15,23,42,.10);
+    padding:7px;
+}
+
+.pc-header .dropdown-item{
+    border-radius:8px;
+    padding:9px 11px;
+}
+
+/* Admin sidebar */
+.pc-sidebar{
+    border-right:1px solid var(--ep-border);
+    box-shadow:4px 0 20px rgba(15,23,42,.03);
+}
+
+.pc-sidebar .m-header{
+    height:70px;
+    padding:0 22px;
+    display:flex;
+    align-items:center;
+    border-bottom:1px solid var(--ep-border);
+}
+
+.pc-sidebar .logo-lg{
+    max-width:145px;
+    max-height:38px;
+}
+
+.pc-sidebar .navbar-content{padding:18px 12px;}
+
+.pc-sidebar .pc-caption{
+    padding:16px 12px 7px;
+}
+
+.pc-sidebar .pc-caption label{
+    color:#94a3b8;
+    font-size:11px;
+    font-weight:700;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+}
+
+.pc-sidebar .pc-link{
+    margin:3px 0;
+    border-radius:10px;
+    color:#64748b;
+    min-height:44px;
+    padding:10px 12px;
+    transition:.2s ease;
+}
+
+.pc-sidebar .pc-link:hover{
+    color:var(--ep-primary);
+    background:#eff6ff;
+}
+
+.pc-sidebar .pc-item.active > .pc-link{
+    color:var(--ep-primary);
+    background:#eff6ff;
+    font-weight:700;
+}
+
+.pc-sidebar .pc-micon{margin-right:10px;}
+
+/* Dashboard stat cards */
+.pc-content .row.g-3 > [class*="col-"] .card{
+    height:100%;
+}
+
+.pc-content .row.g-3 > [class*="col-"] .card-body{
+    padding:24px 18px;
+}
+
+.pc-content .row.g-3 > [class*="col-"] .fs-1{
+    font-size:32px !important;
+}
+
+/* Search controls */
+.card-header form{
+    min-width:280px;
+}
+
+.card-header form .form-control{
+    min-width:220px;
+}
+
+/* Mobile */
+@media (max-width:991px){
+    .pc-container .pc-content{padding:20px 16px;}
+    .pc-header .header-wrapper{padding:0 16px;}
+    .pc-header .list-unstyled.d-flex{overflow-x:auto;white-space:nowrap;}
+    .card-header form{width:100%;min-width:0;}
+    .card-header form .form-control{min-width:0;flex:1;}
+}
+
+@media (max-width:576px){
+    .pc-container .pc-content{padding:16px 12px;}
+    .card-body{padding:17px;}
+    .card-header{padding:15px 17px;}
+    .pc-header .pc-head-link{padding:9px 8px;font-size:13px;}
+    .pc-header .pc-head-link i{margin-right:3px !important;}
+}
