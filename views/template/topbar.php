@@ -1,79 +1,55 @@
 <!-- [ Header Topbar ] start -->
-<header class="pc-header">
-        <div class="header-wrapper"> 
-            <!-- [Mobile Media Block] start -->
-            <div class="me-auto pc-mob-drp">
-                <ul class="list-unstyled">
-                    <li class="pc-h-item pc-sidebar-collapse">
-                        <a href="#" class="pc-head-link ms-0" id="sidebar-hide">
-                            <i class="ti ti-menu-2"></i>
-                        </a>
-                    </li>
-                    <li class="pc-h-item pc-sidebar-popup">
-                        <a href="#" class="pc-head-link ms-0" id="mobile-collapse">
-                            <i class="ti ti-menu-2"></i>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-            <!-- [Mobile Media Block end] -->
+<header class="pc-header ep-user-header">
+    <div class="header-wrapper">
+        <a href="<?= BASE_URL ?>index.php?page=siswa&action=dashboard" class="ep-user-brand">
+            <span class="ep-brand-mark"><i class="ti ti-books"></i></span>
+            <span>
+                <strong>E-Perpus</strong>
+                <small>Perpustakaan Sekolah</small>
+            </span>
+        </a>
 
-            <!-- Menu Navigasi Siswa -->
-            <?php $aksi_aktif = $_GET['action'] ?? 'dashboard'; ?>
-            <ul class="list-unstyled d-flex mb-0 gap-2">
-                <li class="pc-h-item">
-                    <a href="<?= BASE_URL ?>index.php?page=siswa&action=dashboard" class="pc-head-link ms-0 <?= ($aksi_aktif == 'dashboard') ? 'active' : ''; ?>">
-                        <i class="ti ti-dashboard me-1"></i> Dashboard
-                    </a>
-                </li>
-                <li class="pc-h-item">
-                    <a href="<?= BASE_URL ?>index.php?page=siswa&action=peminjaman" class="pc-head-link ms-0 <?= ($aksi_aktif == 'peminjaman') ? 'active' : ''; ?>">
-                        <i class="ti ti-books me-1"></i> Peminjaman
-                    </a>
-                </li>
-                <li class="pc-h-item">
-                    <a href="<?= BASE_URL ?>index.php?page=siswa&action=pengembalian" class="pc-head-link ms-0 <?= ($aksi_aktif == 'pengembalian') ? 'active' : ''; ?>">
-                        <i class="ti ti-arrow-back-up me-1"></i> Pengembalian
-                    </a>
-                </li>
-            </ul>
+        <?php $aksi_aktif = $_GET['action'] ?? 'dashboard'; ?>
 
-            <div class="ms-auto">
-                <ul class="list-unstyled">
-                    <!-- User Profile / Login Button -->
-                    <li class="dropdown pc-h-item">
-                        <a class="pc-head-link dropdown-toggle arrow-none me-0" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
-                            <i class="ti ti-user"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-end pc-h-dropdown">
-                            <?php if (isset($_SESSION['id_user'])): ?>
-                                <div class="dropdown-header px-3 py-2">
-                                    <h6 class="m-0 fw-bold"><?= htmlspecialchars($_SESSION['nama_lengkap']); ?></h6>
-                                </div>
-                                <div class="dropdown-divider"></div>
-                                <a href="<?= BASE_URL ?>index.php?page=auth&action=logout" class="dropdown-item" onclick="return confirm('Yakin ingin logout?');">
-                                    <i class="ti ti-power"></i>
-                                    <span>Logout</span>
-                                </a>
-                            <?php else: ?>
-                                <a href="<?= BASE_URL ?>index.php?page=auth&action=login" class="dropdown-item">
-                                    <i class="ti ti-login"></i>
-                                    <span>Login</span>
-                                </a>
-                                <a href="<?= BASE_URL ?>index.php?page=auth&action=register" class="dropdown-item">
-                                    <i class="ti ti-user-plus"></i>
-                                    <span>Register</span>
-                                </a>
-                            <?php endif; ?>
-                        </div>
-                    </li>
-                </ul>
+        <nav class="ep-user-nav" aria-label="Navigasi siswa">
+            <a href="<?= BASE_URL ?>index.php?page=siswa&action=dashboard" class="ep-nav-item <?= ($aksi_aktif == 'dashboard') ? 'active' : ''; ?>">
+                <i class="ti ti-dashboard"></i><span>Dashboard</span>
+            </a>
+            <a href="<?= BASE_URL ?>index.php?page=siswa&action=peminjaman" class="ep-nav-item <?= ($aksi_aktif == 'peminjaman') ? 'active' : ''; ?>">
+                <i class="ti ti-books"></i><span>Peminjaman</span>
+            </a>
+            <a href="<?= BASE_URL ?>index.php?page=siswa&action=pengembalian" class="ep-nav-item <?= ($aksi_aktif == 'pengembalian') ? 'active' : ''; ?>">
+                <i class="ti ti-arrow-back-up"></i><span>Pengembalian</span>
+            </a>
+        </nav>
+
+        <div class="dropdown ep-user-account">
+            <a class="ep-account-button dropdown-toggle arrow-none" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">
+                <span class="ep-avatar"><i class="ti ti-user"></i></span>
+                <span class="ep-account-text">
+                    <strong><?= htmlspecialchars($_SESSION['nama_lengkap'] ?? 'Pengguna'); ?></strong>
+                    <small>Siswa</small>
+                </span>
+                <i class="ti ti-chevron-down ep-account-chevron"></i>
+            </a>
+            <div class="dropdown-menu dropdown-menu-end ep-account-menu">
+                <div class="ep-account-header">
+                    <span class="ep-avatar large"><i class="ti ti-user"></i></span>
+                    <div>
+                        <strong><?= htmlspecialchars($_SESSION['nama_lengkap'] ?? 'Pengguna'); ?></strong>
+                        <small>Akun Siswa</small>
+                    </div>
+                </div>
+                <div class="dropdown-divider"></div>
+                <a href="<?= BASE_URL ?>index.php?page=auth&action=logout" class="dropdown-item" onclick="return confirm('Yakin ingin logout?');">
+                    <i class="ti ti-power"></i><span>Keluar dari akun</span>
+                </a>
             </div>
         </div>
-    </header>
-    <!-- [ Header Topbar ] end -->
+    </div>
+</header>
+<!-- [ Header Topbar ] end -->
 
-    <!-- [ Main Content ] start -->
-    <div class="pc-container">
-        <div class="pc-content">
-            <!-- Konten halaman dinamis akan di-include di sini -->
+<!-- [ Main Content ] start -->
+<div class="pc-container">
+    <div class="pc-content">
