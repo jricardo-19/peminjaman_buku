@@ -1,3 +1,5 @@
+<div class="ep-page-heading"><div><span class="ep-eyebrow">KOLEKSI BUKU</span><h2>Peminjaman Buku</h2><p>Pilih buku yang tersedia untuk membuat transaksi peminjaman.</p></div></div>
+
 <?php if (isset($_GET['status'])): ?>
     <?php if ($_GET['status'] === 'sukses'): ?>
         <div class="alert alert-success">Peminjaman berhasil diajukan!</div>
