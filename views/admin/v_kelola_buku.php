@@ -1,6 +1,3 @@
-<div class="pc-container">
-    <div class="pc-content">
-
         <div class="card mb-4">
             <div class="card-header"><h5 class="mb-0">Tambah Buku Baru</h5></div>
             <div class="card-body">
@@ -77,6 +74,3 @@
                 </table>
             </div>
         </div>
-
-    </div>
-</div>
