@@ -1,6 +1,3 @@
-<div class="pc-container">
-    <div class="pc-content">
-
         <div class="row g-3 mb-4">
             <div class="col-md-3 col-6">
                 <div class="card">
@@ -46,6 +43,3 @@
                 <p class="text-muted mb-0">Gunakan menu di samping untuk mengelola buku, anggota, dan transaksi peminjaman.</p>
             </div>
         </div>
-
-    </div>
-</div>
