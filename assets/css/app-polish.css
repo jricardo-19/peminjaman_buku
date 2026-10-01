@@ -298,3 +298,9 @@ body[data-pc-theme="light"]{
  .ep-account-button{padding:4px}
  .ep-account-chevron{display:none}
 }
+
+.ep-page-heading{max-width:1400px;margin:0 auto 22px;display:flex;align-items:flex-end;justify-content:space-between}
+.ep-page-heading h2{font-size:24px;font-weight:800;color:#172033;margin:4px 0 5px}
+.ep-page-heading p{margin:0;color:#7b8798;font-size:13px}
+.ep-eyebrow{font-size:11px;font-weight:800;letter-spacing:.10em;color:#2563eb}
+@media(max-width:576px){.ep-page-heading{margin-bottom:16px}.ep-page-heading h2{font-size:21px}.ep-page-heading p{font-size:12px}}
