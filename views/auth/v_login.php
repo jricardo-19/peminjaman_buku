@@ -43,7 +43,7 @@
 
                 <form action="index.php?page=login&action=proses" method="POST">
                     <div class="form-group">
-                        <label>Email atau NIS</label>
+                        <label>Username atau NIS</label>
                         <div class="input-icon">
                             <i class="ti ti-mail"></i>
                             <input type="text" class="form-control" name="email" placeholder="contoh@email.com" required>

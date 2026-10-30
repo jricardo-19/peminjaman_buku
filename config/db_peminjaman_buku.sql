@@ -35,6 +35,7 @@ CREATE TABLE tb_data_buku (
     penerbit VARCHAR(100) NOT NULL,
     tahun_terbit YEAR NOT NULL,
     stok INT(11) NOT NULL,
+    cover VARCHAR(255) NOT NULL,
     FOREIGN KEY (id_admin) REFERENCES tb_admin(id_admin) ON DELETE CASCADE ON UPDATE CASCADE
 );
 

@@ -45,10 +45,10 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <label>Email</label>
+                        <label>Username</label>
                         <div class="input-icon">
-                            <i class="ti ti-mail"></i>
-                            <input type="email" class="form-control" name="email" placeholder="contoh@email.com" required>
+                            <i class="ti ti-user"></i>
+                            <input type="text" class="form-control" name="email" placeholder="AndiCobra" required>
                         </div>
                     </div>
                     <div class="form-group">
